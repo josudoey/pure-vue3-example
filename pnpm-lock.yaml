@@ -19,7 +19,6 @@ specifiers:
   ts-node: ^10.8.0
   typescript: ^4.7.2
   vue: ^3.2.34
-  vue-loader: ^17.0.0
   vue-router: ^4.0.15
   webpack: ^5.72.1
   webpack-cli: ^4.9.2
@@ -44,7 +43,6 @@ devDependencies:
   ts-node: 10.8.0_b78c5ba09bb96cd9873b65821ae0411c
   typescript: 4.7.2
   vue: 3.2.34
-  vue-loader: 17.0.0_webpack@5.72.1
   vue-router: 4.0.15_vue@3.2.34
   webpack: 5.72.1_webpack-cli@4.9.2
   webpack-cli: 4.9.2_158fede7a4a6cac230ff2acad2bc4fff
@@ -2167,10 +2165,6 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hash-sum/2.0.0:
-    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
-    dev: true
-
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
@@ -4079,17 +4073,6 @@ packages:
   /vary/1.1.2:
     resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
     engines: {node: '>= 0.8'}
-    dev: true
-
-  /vue-loader/17.0.0_webpack@5.72.1:
-    resolution: {integrity: sha512-OWSXjrzIvbF2LtOUmxT3HYgwwubbfFelN8PAP9R9dwpIkj48TVioHhWWSx7W7fk+iF5cgg3CBJRxwTdtLU4Ecg==}
-    peerDependencies:
-      webpack: ^4.1.0 || ^5.0.0-0
-    dependencies:
-      chalk: 4.1.2
-      hash-sum: 2.0.0
-      loader-utils: 2.0.2
-      webpack: 5.72.1_webpack-cli@4.9.2
     dev: true
 
   /vue-router/4.0.15_vue@3.2.34:
