@@ -74,14 +74,15 @@ module.exports = {
       }]
     }, {
       test: /\.tsx?$/,
+      exclude: /node_modules/,
       use: [{
+        loader: require.resolve('babel-loader'),
+        options: {}
+      }, {
         loader: require.resolve('ts-loader'),
         options: {
           configFile: "tsconfig.webpack.json"
         }
-      }, {
-        loader: require.resolve('babel-loader'),
-        options: {}
       }],
     }, {
       test: /module\.css$/,
@@ -95,6 +96,19 @@ module.exports = {
             namedExport: true,
             localIdentName: '__[hash:base64:5]'
           },
+          importLoaders: 0
+        }
+      }]
+    }, {
+      test: /\.css$/,
+      exclude: /module\.css$/,
+      use: [{
+        loader: MiniCssExtractPlugin.loader,
+        options: {
+        }
+      }, {
+        loader: require.resolve('css-loader'),
+        options: {
           importLoaders: 0
         }
       }]
